@@ -1,0 +1,15 @@
+MANIFEST.MF
+Main-Class: Battleground
+Class-path: jars/Pokemon.jar
+
+папка name1 (Pokemons) - все файлы атак покемонов  батлграунд
+папака name 2(jars) - библиотека Pokemon.jar
+папка name 3(bin) - все классы
+
+lab2 - формируемый жарник
+
+javac -d bin -cp jars/Pokemon.jar Pokemons/*
+cd bin
+jar -cfm ../lab2.jar ../MANIFEST.MF ./* ../jars/*
+cd ..
+java -jar lab2.jar
